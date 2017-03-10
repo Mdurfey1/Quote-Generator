@@ -3,17 +3,41 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Document</title>
+<script src="node_modules/jquery/dist/jquery.js"></script>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+  <link rel="stylesheet" type="text/css" href="node_modules/font-awesome/css/font-awesome.css">
 </head>
 <body>
-<div class = "quote-box text-center">
-  <div class = "quote ">
-    <i class = "quote-text fa fa-quote-left"></i>
+
+<div class = "row">
+<div class = "quote-box text-center col-lg-6 col-lg-offset-3">
+  <div class = "row">
+  <div class="quote col-lg-12" id="quote-container">
+<div class = "row">
+  <div class = "author" id= "author-container">
+
   </div>
+  </div>
+  </div>
+  </div>
+
   <div class = "buttons">
-    <a class ="button tweet-button btn btn-default btn-large" type = "button" href =""> </a>
-    <button type = "button" class =" button btn btn-default btn-large">New Quote</button>
+    <a class =" twitter-share-button button tweet-button btn btn-default btn-large" id="tweet-button" type = "button" data-hashtags = "quoteGenerator"><i class="fa fa-twitter fa-lg" style = "float: left"></i></a>
+
+    <button type = "button" class =" button btn btn-default btn-large" id ="quote-button">New Quote
+    </button>
   </div>
+
+<div class = "image" id = "image-div">
+
 </div>
-	
+
+</div>
+</div>
+  
 </body>
+
+<script src="index.js"></script>
+
 </html>
