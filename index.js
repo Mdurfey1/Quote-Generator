@@ -16,6 +16,7 @@ function getRandomColor() {
 }
 
 function getQuote () { 
+  $(".quote-box").fadeIn("slow");
 	$.getJSON("https://www.reddit.com/r/QuotesPorn/.json", function(a) {
 	  
     var posts = a.data.children;
@@ -53,14 +54,19 @@ console.log(randomQuoteShortened)
     $("#image-div").html(`<img src = ${randomImage} id = 'background-img' style: 'display: none'></img>`)
     $("#image-div").fadeIn("slow");
     $("#quote-text").fadeIn("slow");
+    // $(".quote-box").html(`style: 'display:none'`);
+    $(".quote-box").fadeIn("slow");
     $("body").css('background-color', getRandomColor());
-  });
 
+})
+  
+
+  
 }
+
 
 getQuote();
 
 $("#quote-button").on("click", getQuote);
-
 
 });

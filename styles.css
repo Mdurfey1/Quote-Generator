@@ -17,6 +17,7 @@
     font-family: Roboto;
     font-weight: 600;
     display: table;
+    -webkit-transition: 1s
     }
 
     #quote-container {
@@ -58,6 +59,11 @@
       margin: 20px -60px 20px 0px;   
     text-align: center;
     cursor: pointer;
+    }
+
+    i {
+
+      color: #fff;
     }
 
 
