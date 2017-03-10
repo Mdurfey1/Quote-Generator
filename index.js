@@ -11,6 +11,7 @@ function getRandomColor() {
     $("#quote-text").css('color', color);
     $("#author-text").css('color', color);
     $('.tweet-button').css('background-color', color);
+    $("#fa-quote").css('background-color', color);
 
     return color;
 }
@@ -47,7 +48,7 @@ tweetButton.href = "https://twitter.com/intent/tweet" + "?text=" + randomQuoteSh
 console.log(randomQuote)
 console.log(randomQuoteShortened)
 
-    $("#quote-container").html(`<h1 class = 'quote-text' id='quote-text'>${randomQuoteShortened}</h1>`);
+    $("#quote-container").html(`<h1 class = 'quote-text' id='quote-text'><i class='fa fa-quote-left fa-lg id = 'fa-quote'> </i>&nbsp${randomQuoteShortened}</h1>`);
     if (author) {
     $("#quote-container").append(`<p class = 'quote-text' id = 'author-text'>${author}</p>`)
   }
