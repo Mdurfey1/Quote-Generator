@@ -2,7 +2,7 @@
   "name": "quote-generator",
   "version": "1.0.0",
   "description": "random quote generator",
-  "main": "server.js",
+  "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "babel": "babel --presets es2015 public/index.js -o public/index.bundle.js",
