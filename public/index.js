@@ -11,7 +11,7 @@ function getRandomColor() {
     $("#author-text").css('color', color);
     $('.tweet-button').css('background-color', color);
     $("#fa-quote").css('background-color', color);
-
+    
     return color;
 }
 
