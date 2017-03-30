@@ -1,5 +1,4 @@
 $( document ).ready(function() {
-    console.log( "ready!" );
 
 function getRandomColor() {
     var letters = '0123456789ABCDEF';
@@ -30,14 +29,12 @@ function getQuote () {
     var author = randomQuote.slice(i);
   }
   }
-  console.log(author);
   var randomQuoteShortened = randomQuote.replace(`${author}`, " ");
   if (author) {
   for (var n = 0; n <= author.length; n++) {
      if (author[n] === '[') {
     var authorTrash = author.slice(n);
     author = author.replace(`${authorTrash}`, "");
-    console.log(author);
   }
   }
 }
@@ -45,8 +42,6 @@ function getQuote () {
 var tweetButton = document.getElementById("tweet-button");
 tweetButton.href = "https://twitter.com/intent/tweet" + "?text=" + randomQuoteShortened;
 
-console.log(randomQuote)
-console.log(randomQuoteShortened)
 
     $("#quote-container").html(`<h1 class = 'quote-text' id='quote-text'><i class='fa fa-quote-left fa-lg id = 'fa-quote'> </i>&nbsp${randomQuoteShortened}</h1>`);
     if (author) {

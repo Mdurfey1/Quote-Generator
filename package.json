@@ -4,7 +4,9 @@
   "description": "random quote generator",
   "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "babel": "babel --presets es2015 public/index.js -o public/index.bundle.js",
+    "start": "node app.js && babel"
   },
   "repository": {
     "type": "git",
@@ -18,7 +20,10 @@
   "homepage": "https://github.com/Mdurfey1/Quote-Generator#readme",
   "dependencies": {
     "bootstrap": "^4.0.0",
+    "ejs": "^2.5.6",
+    "express": "^4.15.2",
     "font-awesome": "^4.7.0",
-    "jquery": "^3.1.1"
+    "jquery": "^3.1.1",
+    "request": "^2.81.0"
   }
 }
